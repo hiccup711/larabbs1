@@ -123,6 +123,7 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/caouecs/laravel-lang" />
     </include_path>
   </component>
   <component name="ProjectId" id="1icTHTnWEdI5saK5J58eHt8Go85" />
@@ -133,11 +134,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Coding\Homestead\Code\larabbs1\resources\lang" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Coding\Homestead\Code\larabbs1\resources\views" />
     </key>
@@ -156,7 +160,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602205792541</updated>
-      <workItem from="1602205793618" duration="4160000" />
+      <workItem from="1602205793618" duration="7125000" />
     </task>
     <servers />
   </component>
@@ -164,9 +168,13 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1602209233623">
+    <state x="425" y="189" key="run.anything.popup" timestamp="1602213990735">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1602209233623" />
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1602213990735" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1602216579960">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1602216579960" />
   </component>
 </project>
