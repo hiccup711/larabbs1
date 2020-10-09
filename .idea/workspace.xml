@@ -136,7 +136,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../larabbs" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -162,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602205792541</updated>
-      <workItem from="1602205793618" duration="10683000" />
+      <workItem from="1602205793618" duration="13884000" />
     </task>
     <servers />
   </component>
@@ -170,17 +170,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog" timestamp="1602223225047">
+    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog" timestamp="1602228622089">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1602223225047" />
+    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1602228622089" />
+    <state x="548" y="171" key="FileChooserDialogImpl" timestamp="1602225878405">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="548" y="171" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1602225878405" />
+    <state x="468" y="137" width="600" height="560" key="find.popup" timestamp="1602223531488">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="468" y="137" width="600" height="560" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1602223531488" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1602213990735">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1602213990735" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1602221468710">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1602230262410">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1602221468710" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1602230262410" />
   </component>
 </project>
