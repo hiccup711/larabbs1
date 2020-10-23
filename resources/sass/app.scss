@@ -10,6 +10,9 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// Topic Body Css
+@import "topic_body";
+
 html{
     position: relative;
     min-height: 100%;
@@ -96,6 +99,21 @@ body{
             margin-bottom: 12px;
             border: 0;
             border-top: 1px solid #dcebf5;
+        }
+    }
+}
+
+// Topic show page
+
+.topics-show-page {
+
+    .card {
+        padding: 15px;
+
+        h1 {
+            margin: 0.4em auto 0.6em;
+            font-size: 28px;
+            line-height: 38px;
         }
     }
 }

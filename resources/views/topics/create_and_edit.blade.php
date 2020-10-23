@@ -26,15 +26,20 @@
 
           @include('shared._error')
           @csrf
-
               <div class="form-group">
                   <input class="form-control" type="text" name="title" value="{{ old('title', $topic->title ) }}" placeholder="请填写标题" required />
               </div>
               <div class="form-group">
                   <select name="category_id" required class="form-control">
-                      <option value="" hidden disabled selected>请选择分类</option>
+                      @if($topic->category_id)
+                          <option value="{{ $topic->category_id }}" selected>{{ $categories[$topic->category_id - 1]->name }}</option>
+                      @else
+                          <option value="" hidden disabled selected>请选择分类</option>
+                      @endif
                       @foreach($categories as $category)
-                          <option value="{{ $category->id }}">{{ $category->name }}</option>
+                          @if($category->id != $topic->category_id -1)
+                              <option value="{{ $category->id }}">{{ $category->name }}</option>
+                          @endif
                       @endforeach
                   </select>
               </div>
