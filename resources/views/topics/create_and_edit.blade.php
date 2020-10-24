@@ -31,16 +31,13 @@
               </div>
               <div class="form-group">
                   <select name="category_id" required class="form-control">
-                      @if($topic->category_id)
-                          <option value="{{ $topic->category_id }}" selected>{{ $categories[$topic->category_id - 1]->name }}</option>
-                      @else
+                      @if( ! $topic->category_id)
                           <option value="" hidden disabled selected>请选择分类</option>
-                      @endif
+                      @else
                       @foreach($categories as $category)
-                          @if($category->id != $topic->category_id -1)
-                              <option value="{{ $category->id }}">{{ $category->name }}</option>
-                          @endif
+                              <option value="{{ $category->id }}" {{ $category->id == $topic->category_id ? 'selected' : '' }}>{{ $category->name }}</option>
                       @endforeach
+                      @endif
                   </select>
               </div>
               <div class="form-group"><textarea name="content" id="editor" rows="6" placeholder="请至少输入3个字符"
