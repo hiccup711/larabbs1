@@ -33,11 +33,10 @@
                   <select name="category_id" required class="form-control">
                       @if( ! $topic->category_id)
                           <option value="" hidden disabled selected>请选择分类</option>
-                      @else
+                      @endif
                       @foreach($categories as $category)
                               <option value="{{ $category->id }}" {{ $category->id == $topic->category_id ? 'selected' : '' }}>{{ $category->name }}</option>
                       @endforeach
-                      @endif
                   </select>
               </div>
               <div class="form-group"><textarea name="content" id="editor" rows="6" placeholder="请至少输入3个字符"
