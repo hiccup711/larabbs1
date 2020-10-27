@@ -24,24 +24,13 @@
   <component name="ChangeListManager">
     <list default="true" id="1773874c-dfc8-4780-a834-f22cc8b36278" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ReplyRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ReplyRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TopicRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/TopicRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Reply.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Reply.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Topic.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/ReplyObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/ReplyObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/TopicObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/TopicObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/purifier.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/purifier.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ReplyFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ReplyFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/TopicFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TopicFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_22_132750_create_topics_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_22_132750_create_topics_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_27_142402_create_replies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_27_142402_create_replies_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topics/_reply_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/_reply_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topics/create_and_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/create_and_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topics/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/TopicReplied.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/TopicReplied.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_27_194910_create_notifications_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_27_194910_create_notifications_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +218,7 @@
       <workItem from="1603343149125" duration="12117000" />
       <workItem from="1603422710720" duration="10241000" />
       <workItem from="1603516175483" duration="2169000" />
-      <workItem from="1603777935376" duration="11553000" />
+      <workItem from="1603777935376" duration="14316000" />
     </task>
     <servers />
   </component>
@@ -249,10 +238,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog" timestamp="1603790264362">
+    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog" timestamp="1603803278368">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1603790264362" />
+    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1603803278368" />
     <state x="548" y="171" key="FileChooserDialogImpl" timestamp="1602225878405">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -273,9 +262,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603799828698" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603800057383">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603803216438">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603800057383" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603803216438" />
   </component>
 </project>
