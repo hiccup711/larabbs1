@@ -12,7 +12,7 @@ $factory->define(App\Models\Topic::class, function (Faker $faker) {
     $created_at = $faker->dateTimeThisMonth($updated_at);
     return [
         'title' => $sentence,
-        'body' => $faker->text(),
+        'content' => $faker->text(),
         'excerpt' => $sentence,
         'user_id' => $faker->randomElement([1,2,3,4,5,6,7,8,9,10]),
         'category_id' => $faker->randomElement([1,2,3,4]),
