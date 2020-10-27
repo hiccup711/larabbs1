@@ -23,8 +23,8 @@ class TopicObserver
 
     public function saving(Topic $topic)
     {
-        $topic->content = clean($topic->content, 'user_topic_content');
-        $topic->excerpt = make_excerpt($topic->content);
+        $topic->body = clean($topic->body, 'user_topic_body');
+        $topic->excerpt = make_excerpt($topic->body);
     }
 
     public function saved(Topic $topic)

@@ -21,7 +21,7 @@ class TopicRequest extends Request
             {
                 return [
                     'title' => 'required|min:2',
-                    'content'  => 'required|min:3',
+                    'body'  => 'required|min:3',
                     'category_id' => 'required|numeric'
                 ];
             }
@@ -38,7 +38,7 @@ class TopicRequest extends Request
     {
         return [
             'title.min' => '标题必须至少两个字符',
-            'content.min' => '文章内容必须至少三个字符',
+            'body.min' => '文章内容必须至少三个字符',
         ];
     }
 }

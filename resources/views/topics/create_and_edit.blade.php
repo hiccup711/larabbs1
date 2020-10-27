@@ -39,8 +39,8 @@
                       @endforeach
                   </select>
               </div>
-              <div class="form-group"><textarea name="content" id="editor" rows="6" placeholder="请至少输入3个字符"
-                                                class="form-control" required>{{ old('body', $topic->content) }}</textarea></div>
+              <div class="form-group"><textarea name="body" id="editor" rows="6" placeholder="请至少输入3个字符"
+                                                class="form-control" required>{{ old('body', $topic->body) }}</textarea></div>
               <div class="well well-sm">
                   <button type="submit" class="btn btn-primary"><i class="far fa-save mr-2" aria-hidden="true"></i> 保存</button>
               </div>

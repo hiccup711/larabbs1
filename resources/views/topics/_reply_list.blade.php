@@ -22,7 +22,7 @@
                     </span>
                 </div>
                 <div class="reply-content text-secondary">
-                    {!! $reply->content !!}
+                    {!! $reply->body !!}
                 </div>
             </div>
         </li>

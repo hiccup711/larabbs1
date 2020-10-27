@@ -9,8 +9,25 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable implements MustVerifyEmailContract
 {
-    use Notifiable, MustVerifyEmailTrait;
+    use MustVerifyEmailTrait;
+    use Notifiable{
+        notify as protected laravelNotify;
+    }
 
+    public function notify($instance)
+    {
+        if($this->id == \Auth::id())
+        {
+            return;
+        }
+
+        if(method_exists($instance, 'toDatabase'))
+        {
+            $this->increment('notification_count');
+        }
+
+        $this->laravelNotify($instance);
+    }
     /**
      * The attributes that are mass assignable.
      *
