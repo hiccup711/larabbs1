@@ -26,11 +26,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/larabbs1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larabbs1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/ReplyObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/ReplyObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Policy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Policy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +172,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/horizon" />
       <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/viacreative/sudo-su" />
     </include_path>
   </component>
   <component name="ProjectId" id="1icTHTnWEdI5saK5J58eHt8Go85" />
@@ -219,7 +221,7 @@
       <workItem from="1603422710720" duration="10241000" />
       <workItem from="1603516175483" duration="2169000" />
       <workItem from="1603777935376" duration="14395000" />
-      <workItem from="1603844512396" duration="5934000" />
+      <workItem from="1603844512396" duration="8804000" />
     </task>
     <servers />
   </component>
@@ -255,17 +257,17 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="653" height="446" key="SwitcherDM/0.0.1536.834@0.0.1536.834" timestamp="1603372675829" />
-    <state x="468" y="137" width="981" height="560" key="find.popup" timestamp="1603789118257">
+    <state x="468" y="137" width="981" height="560" key="find.popup" timestamp="1603852763780">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="468" y="137" width="981" height="560" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1603789118257" />
+    <state x="468" y="137" width="981" height="560" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1603852763780" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1603845938408">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603845938408" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603850124617">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603857186471">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603850124617" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603857186471" />
   </component>
 </project>
