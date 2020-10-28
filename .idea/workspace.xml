@@ -23,14 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1773874c-dfc8-4780-a834-f22cc8b36278" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/larabbs1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larabbs1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Topic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Notifications/TopicReplied.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/TopicReplied.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Observers/ReplyObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/ReplyObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/TopicObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/TopicObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/ReplyPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ReplyPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topics/_reply_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/_reply_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +170,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel-lang/lang" />
       <path value="$PROJECT_DIR$/vendor/laravel/horizon" />
       <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
     </include_path>
   </component>
   <component name="ProjectId" id="1icTHTnWEdI5saK5J58eHt8Go85" />
@@ -218,7 +219,7 @@
       <workItem from="1603422710720" duration="10241000" />
       <workItem from="1603516175483" duration="2169000" />
       <workItem from="1603777935376" duration="14395000" />
-      <workItem from="1603844512396" duration="2547000" />
+      <workItem from="1603844512396" duration="5934000" />
     </task>
     <servers />
   </component>
@@ -238,10 +239,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog" timestamp="1603847061981">
+    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog" timestamp="1603849326439">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1603847061981" />
+    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1603849326439" />
     <state x="548" y="171" key="FileChooserDialogImpl" timestamp="1602225878405">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -262,9 +263,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603845938408" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603846760152">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603850124617">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603846760152" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603850124617" />
   </component>
 </project>

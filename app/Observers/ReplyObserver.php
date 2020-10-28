@@ -18,7 +18,11 @@ class ReplyObserver
     public function created(Reply $reply)
     {
         $reply->topic->updateReplyCount();
-        $reply->topic->user->notify(new TopicReplied($reply));
+
+        if(! app()->runningInConsole())
+        {
+            $reply->topic->user->notify(new TopicReplied($reply));
+        }
     }
 
     public function deleted(Reply $reply)

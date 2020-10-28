@@ -18,5 +18,10 @@ class UsersTableSeeder extends Seeder
         $user->email = '43733717@qq.com';
         $user->avatar = default_avatar();
         $user->save();
+
+        $user->assignRole('Founder');
+
+        $user = User::find(2);
+        $user->assignRole('Maintainer');
     }
 }
