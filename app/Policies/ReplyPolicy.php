@@ -9,12 +9,11 @@ class ReplyPolicy extends Policy
 {
     public function update(User $user, Reply $reply)
     {
-        // return $reply->user_id == $user->id;
-        return true;
+        return $user->isAuthOf($reply);
     }
 
     public function destroy(User $user, Reply $reply)
     {
-        return true;
+        return $user->isAuthOf($reply) || $user->isAuthOf($reply->topic);
     }
 }
