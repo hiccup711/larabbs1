@@ -42,7 +42,7 @@
                                 管理后台
                             </a>
                             <div class="dropdown-divider"></div>
-                        @endcan 
+                        @endcan
                         <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">个人中心</a>
                         <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">编辑资料</a>
                         <div class="dropdown-divider"></div>
