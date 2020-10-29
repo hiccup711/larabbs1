@@ -38,3 +38,6 @@ Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
 Route::resource('replies', 'RepliesController', ['only' => [  'store',  'destroy']]);
 // 消息列表
 Route::resource('notifications', 'NotificationsController', ['only' => ['index']]);
+
+// 后台无权限跳转
+Route::get('permission-denied', 'PagesController@permissionDenied')->name('permission-denied');
