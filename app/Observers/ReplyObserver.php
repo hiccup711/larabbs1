@@ -21,7 +21,7 @@ class ReplyObserver
 
         if(! app()->runningInConsole())
         {
-            $reply->topic->user->notify(new TopicReplied($reply));
+            $reply->topic->user->topicNotify(new TopicReplied($reply));
         }
     }
 

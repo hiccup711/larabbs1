@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Traits\ActiveUserHelper;
+use http\Env;
 use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract;
 use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -11,25 +12,7 @@ use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements MustVerifyEmailContract
 {
-    use MustVerifyEmailTrait, HasRoles, ActiveUserHelper;
-    use Notifiable {
-        notify as protected laravelNotify;
-    }
-
-    public function notify($instance)
-    {
-        if($this->id == \Auth::id())
-        {
-            return;
-        }
-
-        if(method_exists($instance, 'toDatabase'))
-        {
-            $this->increment('notification_count');
-        }
-
-        $this->laravelNotify($instance);
-    }
+    use MustVerifyEmailTrait, HasRoles, ActiveUserHelper, Notifiable;
     /**
      * The attributes that are mass assignable.
      *
@@ -90,9 +73,26 @@ class User extends Authenticatable implements MustVerifyEmailContract
 
     public function setAvatarAttribute($path)
     {
-        if(!\Str::startsWith($path, 'http') || !\Str::startsWith($path, 'https')){
+        if(!\Str::startsWith($path, 'http')){
             $path = config('app.url') . '/uploads/images/avatars/' . $path;
         }
         $this->attributes['avatar'] = $path;
+    }
+
+
+
+    public function topicNotify($instance)
+    {
+        if($this->id == \Auth::id())
+        {
+            return;
+        }
+
+        if(method_exists($instance, 'toDatabase'))
+        {
+            $this->increment('notification_count');
+        }
+
+        $this->notify($instance);
     }
 }
