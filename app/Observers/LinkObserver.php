@@ -17,6 +17,6 @@ class LinkObserver{
 
     public function deleted()
     {
-        
+
     }
 }
