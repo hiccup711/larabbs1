@@ -18,4 +18,12 @@ class UserObserver
     {
         //
     }
+
+    public function saving(User $user)
+    {
+        if(empty($user->avatar))
+        {
+            $user->avatar = default_avatar();
+        }
+    }
 }
