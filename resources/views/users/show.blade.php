@@ -10,6 +10,27 @@
             <div class="card ">
                 <img class="card-img-top" src="{{ $user->avatar }}" alt="{{ $user->name }}">
                 <div class="card-body">
+                    <section class="stats">
+                        <a href="{{ route('users.followings', $user) }}">
+                            <strong id="following" class="stat">
+                                {{ count($user->followings) }}
+                            </strong>
+                            关注
+                        </a>
+                        <a href="{{ route('users.followers', $user) }}">
+                            <strong id="followers" class="stat">
+                                {{ count($user->followers) }}
+                            </strong>
+                            粉丝
+                        </a>
+                        <a href="#">
+                            <strong id="statuses" class="stat">
+                                {{ $user->topic_count }}
+                            </strong>
+                            文章
+                        </a>
+                    </section>
+                    <hr>
                     <h5><strong>个人简介</strong></h5>
                     <p>{{ $user->introduction }}</p>
                     <hr>
@@ -44,9 +65,9 @@
                         </li>
                     </ul>
                     @if (if_query('tab', 'replies'))
-                        @include('users._replies', ['replies' => $user->replies()->with('topic')->recent()->paginate(5)])
+                        @include('users._replies', ['replies' => $user->replies()->with('topic')->recent()->paginate(10)])
                     @else
-                        @include('users._topics', ['topics' => $user->topics()->recent()->paginate(5)])
+                        @include('users._topics', ['topics' => $user->topics()->recent()->paginate(10)])
                     @endif
                 </div>
             </div>

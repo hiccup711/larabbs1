@@ -6,40 +6,40 @@ use Illuminate\Support\Facades\Schema;
 
 class AddReference extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
-        Schema::table('topics', function (Blueprint $table){
-//            topics 表的 user_id 与 users 表的 id字段关联，当 users 表发生删除事件，被删除的 id 会关联 topics 表 user_id 字段
+        Schema::table('topics', function (Blueprint $table) {
+
+            // 当 user_id 对应的 users 表数据被删除时，删除词条
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
 
-        Schema::table('replies', function (Blueprint $table){
+        Schema::table('replies', function (Blueprint $table) {
+
+            // 当 user_id 对应的 users 表数据被删除时，删除此条数据
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
+            // 当 topic_id 对应的 topics 表数据被删除时，删除此条数据
             $table->foreign('topic_id')->references('id')->on('topics')->onDelete('cascade');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
-        Schema::table('topics', function (Blueprint $table){
-//            移除外键
-            $table->dropForeign('user_id');
-        });
+        if (Schema::hasColumn('topics', 'column_name')) {
+            Schema::table('topics', function (Blueprint $table) {
+                // 移除外键约束
+                $table->dropForeign(['user_id']);
+            });
+        }
 
-        Schema::table('replies', function (Blueprint $table){
-//            移除外键
-            $table->dropForeign('user_id');
-            $table->dropForeign('topic_id');
-        });
+        if (Schema::hasColumn('replies', 'column_name')) {
+            Schema::table('replies', function (Blueprint $table) {
+                // 移除外键约束
+                $table->dropForeign(['user_id']);
+                $table->dropForeign(['topic_id']);
+            });
+        }
+
     }
 }

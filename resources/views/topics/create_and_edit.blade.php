@@ -51,6 +51,7 @@
 </div>
 @endsection
 @section('scripts')
+{{--    editor --}}
 <script type="text/javascript" src="{{ asset('js/module.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/hotkeys.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/uploader.min.js') }}"></script>

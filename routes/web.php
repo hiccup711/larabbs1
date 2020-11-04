@@ -26,7 +26,9 @@ Route::post('email/resend', 'Auth\VerificationController@resend')->name('verific
 
 // 用户相关
 Route::resource('users', 'UsersController', [ 'only' => ['show', 'update', 'edit']]);
-
+// 关注人
+Route::get('users/{user}/followings', 'UsersController@followings')->name('users.followings');
+Route::get('users/{user}/followers', 'UsersController@followers')->name('users.followers');
 // 帖子
 Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
 Route::get('topics/{topic}/{slug?}', 'TopicsController@show')->name('topics.show');
@@ -35,9 +37,14 @@ Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload
 // 分类
 Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
 // 帖子回复
-Route::resource('replies', 'RepliesController', ['only' => [  'store',  'destroy']]);
+Route::resource('replies', 'RepliesController', ['only' => ['store',  'destroy']]);
 // 消息列表
 Route::resource('notifications', 'NotificationsController', ['only' => ['index']]);
 
 // 后台无权限跳转
 Route::get('permission-denied', 'PagesController@permissionDenied')->name('permission-denied');
+
+// @某人路由
+Route::get('atusers', 'RepliesController@atUsers')->name('atusers');
+
+

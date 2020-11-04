@@ -1,7 +1,9 @@
 @extends('layouts.app')
 @section('title', $topic->title)
 @section('description', $topic->excerpt)
-
+@section('styles')
+    <link rel="stylesheet" href="{{ asset('css/atwho.min.css') }}">
+@stop
 @section('content')
 <div class="row">
     <div class="col-lg-3 col-md-3 hidden-sm hidden-xs author-info">
@@ -66,3 +68,26 @@
     </div>
 </div>
 @endsection
+
+@section('scripts')
+    {{-- at someone --}}
+    <script type="text/javascript" src="{{ asset('js/atwho.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/create.min.js') }}"></script>
+    <script>
+        $('#reply_box').atwho({
+            at: "@",
+            callbacks: {
+                remoteFilter: function(query, callback) {
+                    $.getJSON("/atusers", {q: query}, function(data) {
+                        callback(data)
+                    });
+                }
+            }
+        });
+        {{--var at_config = {--}}
+        {{--    at: "@",--}}
+        {{--    data: '{{ asset('/atusers') }}',--}}
+        {{--}--}}
+        {{--$('#reply_box').atwho(at_config);--}}
+    </script>
+@stop

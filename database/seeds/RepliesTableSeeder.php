@@ -9,6 +9,5 @@ class RepliesTableSeeder extends Seeder
     {
         $replies = factory(Reply::class)->times(1000)->create();
     }
-
 }
 
