@@ -23,8 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1773874c-dfc8-4780-a834-f22cc8b36278" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/VerificationCodesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/VerificationCodesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Api/VerificationCodeRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Api/VerificationCodeRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/captcha.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/captcha.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -231,7 +233,8 @@
       <workItem from="1604281540426" duration="8594000" />
       <workItem from="1604378753720" duration="7464000" />
       <workItem from="1604467472920" duration="8024000" />
-      <workItem from="1604564165708" duration="7715000" />
+      <workItem from="1604564165708" duration="15506000" />
+      <workItem from="1604639681159" duration="6225000" />
     </task>
     <servers />
   </component>
@@ -251,10 +254,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog" timestamp="1604572381757">
+    <state x="498" y="171" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604584720348">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1604572381757" />
+    <state x="498" y="171" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1604584720348" />
+    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog" timestamp="1604578917731">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1604578917731" />
     <state x="548" y="171" key="FileChooserDialogImpl" timestamp="1602225878405">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -275,9 +282,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1604236375327" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1604575046468">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1604647071823">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1604575046468" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1604647071823" />
   </component>
 </project>
