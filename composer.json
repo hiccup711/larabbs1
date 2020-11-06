@@ -21,6 +21,7 @@
         "mews/captcha": "^3.2",
         "mews/purifier": "^3.3",
         "overtrue/easy-sms": "^1.1",
+        "overtrue/laravel-socialite": "~2.0",
         "overtrue/pinyin": "^4.0",
         "spatie/laravel-permission": "~3.0",
         "summerblue/administrator": "7.*",
