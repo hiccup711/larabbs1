@@ -9,8 +9,9 @@ use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends Authenticatable implements MustVerifyEmailContract
+class User extends Authenticatable implements MustVerifyEmailContract, JWTSubject
 {
     use MustVerifyEmailTrait, HasRoles, ActiveUserHelper, Notifiable, RecordLastActiveAt;
     /**
@@ -136,5 +137,14 @@ class User extends Authenticatable implements MustVerifyEmailContract
             $this->save();
         }
         return $value;
+    }
+//    实现JWT方法 'getJWTCustomClaims', 'getJWTIdentifier'
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+    public function getJWTCustomClaims()
+    {
+        return [];
     }
 }

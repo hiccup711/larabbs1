@@ -33,6 +33,7 @@ class TopicObserver
 //        {
 //            dispatch( new TranslateSlug($topic) );
 //        }
+        $topic->user->topic_count = $topic->user->topics->count();
     }
 
     public function deleted(Topic $topic)
