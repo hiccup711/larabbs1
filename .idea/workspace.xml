@@ -24,7 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1773874c-dfc8-4780-a834-f22cc8b36278" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/TopicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/TopicsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Api/TopicRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Api/TopicRequest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +240,7 @@
       <workItem from="1604639681159" duration="11203000" />
       <workItem from="1604714813526" duration="10545000" />
       <workItem from="1605423633910" duration="9341000" />
-      <workItem from="1605605141044" duration="5102000" />
+      <workItem from="1605605141044" duration="6619000" />
     </task>
     <servers />
   </component>
@@ -263,10 +264,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="498" y="171" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1604584720348" />
-    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog" timestamp="1605442587565">
+    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog" timestamp="1605617259207">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1605442587565" />
+    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1605617259207" />
     <state x="548" y="171" key="FileChooserDialogImpl" timestamp="1602225878405">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -287,9 +288,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1605435870516" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605612497231">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605616972172">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605612497231" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605616972172" />
   </component>
 </project>
