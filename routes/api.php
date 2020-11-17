@@ -31,11 +31,21 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
 //    访问相关
     Route::middleware('throttle:' . config('api.rate_limits.access'))->group(function (){
 //        游客可以访问的接口
+//        获取某个用户信息
         Route::get('users/{user}', 'UsersController@show')->name('users.show');
+//      分类列表
+        Route::get('categories', 'CategoriesController@index')->name('categories.index');
 
 //        登录后可以访问的接口
         Route::middleware('auth:api')->group(function (){
+//            获取登录用户信息
             Route::get('user', 'UsersController@me')->name('user.show');
+//          编辑登录用户信息
+            Route::patch('user', 'UsersController@update')
+                ->name('user.update');
+//          上传图片
+            Route::post('images', 'ImagesController@store')
+                ->name('images.store');
         });
     });
 });
