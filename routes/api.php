@@ -48,7 +48,7 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
                 ->name('images.store');
 //           用户发布话题
             Route::resource('topics', 'TopicsController')->only([
-                'store', 'update', 'destroy'
+                'index', 'show', 'store', 'update', 'destroy'
             ]);
         });
     });
