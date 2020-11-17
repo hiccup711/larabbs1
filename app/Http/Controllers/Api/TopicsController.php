@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Http\Controllers\Controller;
+use App\Http\Requests\TopicRequest;
+use App\Http\Resources\TopicResource;
+use Illuminate\Http\Request;
+use App\Models\Topic;
+
+class TopicsController extends Controller
+{
+    public function store(TopicRequest $request, Topic $topic)
+    {
+        $topic->fill($request->all());
+        $topic->user_id = $request->user()->id;
+        $topic->save();
+
+        return new TopicResource($topic);
+    }
+}
