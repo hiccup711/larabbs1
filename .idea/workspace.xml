@@ -23,14 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1773874c-dfc8-4780-a834-f22cc8b36278" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/larabbs1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larabbs1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/TopicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/TopicsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TopicResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TopicResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Topic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -248,7 +241,8 @@
       <workItem from="1604639681159" duration="11203000" />
       <workItem from="1604714813526" duration="10545000" />
       <workItem from="1605423633910" duration="9341000" />
-      <workItem from="1605605141044" duration="13596000" />
+      <workItem from="1605605141044" duration="14196000" />
+      <workItem from="1605677425743" duration="6051000" />
     </task>
     <servers />
   </component>
@@ -272,10 +266,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="498" y="171" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1604584720348" />
-    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog" timestamp="1605626508403">
+    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog" timestamp="1605686594786">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1605626508403" />
+    <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1605686594786" />
     <state x="548" y="171" key="FileChooserDialogImpl" timestamp="1602225878405">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -292,13 +286,13 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="468" y="137" width="981" height="560" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1604235519659" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1605435870516">
+    <state x="425" y="189" key="run.anything.popup" timestamp="1605686709814">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1605435870516" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605625739829">
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1605686709814" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605689960339">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605625739829" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605689960339" />
   </component>
 </project>
