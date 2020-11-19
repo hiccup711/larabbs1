@@ -29,10 +29,10 @@ class AuthorizationsController extends Controller
 
             $oauthUser = $driver->user($accessToken);
             if(!$oauthUser->getid()){
-                throw new \Error('参数错误，未获取用户信息');
+                throw new \Error(__('auth.param_error'));
             }
         } catch (\Exception $e) {
-            throw new \Error('参数错误，未获取用户信息');
+            throw new \Error(__('auth.param_error'));
         }
 
         switch ($type) {
@@ -71,7 +71,7 @@ class AuthorizationsController extends Controller
 
         if(!$token = \Auth::guard('api')->attempt($credentials))
         {
-            throw new AuthenticationException('用户名或密码错误');
+            throw new AuthenticationException(__('auth.failed'));
         }
 
         return $this->responseWithToken($token)->setStatusCode(201);

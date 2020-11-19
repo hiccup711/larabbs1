@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
+    'failed' => 'Username or password is incorrect.',
+    'param_error' => 'Parameter error, can not get user info.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
 ];

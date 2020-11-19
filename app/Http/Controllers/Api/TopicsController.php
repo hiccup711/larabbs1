@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
 use App\Http\Requests\TopicRequest;
 use App\Http\Resources\TopicResource;
 use Illuminate\Http\Request;
@@ -51,9 +50,9 @@ class TopicsController extends Controller
         return response(null, 204);
     }
 
-    public function show($topicId)
+    public function show($topicId, TopicQuery $query)
     {
-        $topic = QueryBuilder::for(Topic::class)->allowedIncludes(['user','category'])->findOrFail($topicId);
+        $topic = $query->findOrFail($topicId);
         return new TopicResource($topic);
     }
 }

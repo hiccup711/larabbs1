@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api;
 
 use App\Models\Image;
 use App\Handlers\ImageUploadHandler;
-use App\Http\Controllers\Controller;
 use App\Http\Resources\ImageResource;
 use App\Http\Requests\Api\ImageRequest;
 use Illuminate\Http\Request;

@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
+Route::prefix('v1')->namespace('Api')->middleware('change-locale')->name('api.v1.')->group(function () {
 //    登录相关
     Route::middleware('throttle:'. config('api.rate_limits.sign'))->group(function (){
 //      短信验证码
@@ -35,8 +35,20 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
         Route::get('users/{user}', 'UsersController@show')->name('users.show');
 //      分类列表
         Route::get('categories', 'CategoriesController@index')->name('categories.index');
+//      话题列表
+        Route::get('topics/', 'TopicsController@index')->name('topics.index');
+//      某个话题详情
+        Route::get('topics/{topic}', 'TopicsController@show')->name('topics.show');
+//      回复列表
+        Route::get('topics/{topic}/replies', 'RepliesController@index')->name('topics.replies.index');
+//      某个用户的回复列表
+        Route::get('users/{user}/replies', 'RepliesController@userIndex')->name('topics.replies.userIndex');
+//      推荐资源列表
+        Route::get('links', 'LinksController@index')->name('links.index');
+//      活跃用户
+        Route::get('actived/users', 'UsersController@activedUsersIndex')->name('actived.users.index');
 
-//        登录后可以访问的接口
+//  **** 登录后可以访问的接口 ****
         Route::middleware('auth:api')->group(function (){
 //            获取登录用户信息
             Route::get('user', 'UsersController@me')->name('user.show');
@@ -48,16 +60,12 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
                 ->name('images.store');
 //           用户发布话题
             Route::resource('topics', 'TopicsController')->only([
-                'index', 'show', 'store', 'update', 'destroy'
+                'store', 'update', 'destroy'
             ]);
 //           发布回复
             Route::post('topics/{topic}/replies', 'RepliesController@store')->name('topics.replies.store');
 //           删除回复
             Route::delete('topics/{topic}/replies/{reply}', 'RepliesController@destroy')->name('topics.replies.destroy');
-//          回复列表
-            Route::get('topics/{topic}/replies', 'RepliesController@index')->name('topics.replies.index');
-//          某个用户的回复列表
-            Route::get('users/{user}/replies', 'RepliesController@userIndex')->name('topics.replies.userIndex');
 //          通知列表
             Route::get('notifications', 'NotificationsController@index')->name('notifications.index');
 //          未读消息统计
