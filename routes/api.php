@@ -64,6 +64,8 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
             Route::get('notifications/stats', 'NotificationsController@stats')->name('notification.stats');
 //          消息标记已读
             Route::patch('user/read/notifications', 'NotificationsController@read')->name('user.notifications.read');
+//          当前登录用户权限
+            Route::get('user/permissions', 'PermissionsController@index')->name('user.permissions.index');
         });
     });
 });

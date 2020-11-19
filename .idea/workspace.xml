@@ -24,7 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1773874c-dfc8-4780-a834-f22cc8b36278" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/NotificationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/NotificationsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -244,6 +243,7 @@
       <workItem from="1605423633910" duration="9341000" />
       <workItem from="1605605141044" duration="14196000" />
       <workItem from="1605677425743" duration="7179000" />
+      <workItem from="1605771876462" duration="1972000" />
     </task>
     <servers />
   </component>
@@ -291,9 +291,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1605686709814" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605690152258">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605776755663">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605690152258" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605776755663" />
   </component>
 </project>
