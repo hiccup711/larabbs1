@@ -173,7 +173,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        \App\Providers\EasySmsServiceProvider::class
+//        短信发送
+        \App\Providers\EasySmsServiceProvider::class,
+//        极光推送
+        App\Providers\JpushServiceProvider::class,
+
     ],
 
     /*
