@@ -11,9 +11,11 @@ use Psr\Http\Message\ServerRequestInterface;
 use League\OAuth2\Server\AuthorizationServer;
 use Laminas\Diactoros\Response as Psr7Response;
 use League\OAuth2\Server\Exception\OAuthServerException;
+use App\Traits\PassportToken;
 
 class AuthorizationsController extends Controller
 {
+    use PassportToken;
     public function socialStore($type, SocialAuthorizationRequest $request)
     {
         $driver = \Socialite::driver($type);
@@ -32,38 +34,34 @@ class AuthorizationsController extends Controller
             }
 
             $oauthUser = $driver->user($accessToken);
-            if(!$oauthUser->getid()){
-                throw new \Error(__('auth.param_error'));
-            }
         } catch (\Exception $e) {
             throw new \Error(__('auth.param_error'));
         }
 
         switch ($type) {
             case 'wechat':
-                $unionid = $oauthUser->getOriginal()['unionid'] ?? null;
+                $unionid = $oauthUser->getOriginal()['unionid'] ?? '';
                 $openid = $oauthUser->getId() ?? '';
                 if ($unionid) {
                     $user = User::where('weixin_unionid', $unionid)->first();
                 } else {
-                    $user = User::where('weixin_openid', $openid)->get();
+                    $user = User::where('weixin_openid', $openid)->first();
                 }
-
                 // 没有用户，默认创建一个用户
-                if (!$user) {
+                if ($user == []) {
                     $user = User::create([
                         'name' => $oauthUser->getNickname(),
                         'avatar' => $oauthUser->getAvatar(),
-                        'weixin_openid' => $oauthUser->getId(),
+                        'weixin_openid' => $openid,
                         'weixin_unionid' => $unionid,
-                    ]);
+                    ]); 
                 }
-
                 break;
         }
-        $token = \Auth::guard('api')->login($user);
+        $result = $this->getBearerTokenByUser($user, '1', false);
 
-        return $this->responseWithToken($token)->setStatusCode(201);
+        return response()->json($result)->setStatusCode(201);
+
     }
     public function store(AuthorizationRequest $originalRequest, AuthorizationServer $server, ServerRequestInterface $serverRequest)
     {
@@ -104,5 +102,5 @@ class AuthorizationsController extends Controller
         } else {
             throw new AuthenticationException('The token is invalid.');
         }
-    } 
+    }
 }

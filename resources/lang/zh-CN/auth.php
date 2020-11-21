@@ -13,5 +13,6 @@ return [
     */
 
     'failed'   => '用户名或密码错误',
+    'param_error' => '参数错误，未获取用户信息',
     'throttle' => '您尝试的登录次数过多，请 :seconds 秒后再试。',
 ];
