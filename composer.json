@@ -18,6 +18,7 @@
         "laravel-lang/lang": "~6.1",
         "laravel/framework": "^7.24",
         "laravel/horizon": "~4.3",
+        "laravel/passport": "9.*",
         "laravel/tinker": "^2.0",
         "mews/captcha": "^3.2",
         "mews/purifier": "^3.3",
