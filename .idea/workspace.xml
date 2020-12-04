@@ -23,9 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1773874c-dfc8-4780-a834-f22cc8b36278" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/larabbs1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larabbs1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthorizationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthorizationsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/zh-CN/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/zh-CN/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +196,14 @@
       <path value="$PROJECT_DIR$/vendor/league/event" />
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/overtrue/wechat" />
+      <path value="$PROJECT_DIR$/vendor/overtrue/laravel-wechat" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/vendor/easywechat-composer/easywechat-composer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1icTHTnWEdI5saK5J58eHt8Go85" />
@@ -206,7 +217,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -259,6 +270,9 @@
       <workItem from="1605677425743" duration="7179000" />
       <workItem from="1605771876462" duration="9554000" />
       <workItem from="1605953512859" duration="9216000" />
+      <workItem from="1606075721860" duration="606000" />
+      <workItem from="1606888637566" duration="617000" />
+      <workItem from="1607071577500" duration="2138000" />
     </task>
     <servers />
   </component>
@@ -286,10 +300,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" maximized="true" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1605962035178" />
-    <state x="548" y="171" key="FileChooserDialogImpl" timestamp="1602225878405">
+    <state x="548" y="171" key="FileChooserDialogImpl" timestamp="1606912040275">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="548" y="171" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1602225878405" />
+    <state x="548" y="171" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1606912040275" />
     <state x="598" y="336" key="NewPhpFileDialog" timestamp="1602325190392">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -306,9 +320,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1605686709814" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605964977076">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1607080276558">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605964977076" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1607080276558" />
   </component>
 </project>
